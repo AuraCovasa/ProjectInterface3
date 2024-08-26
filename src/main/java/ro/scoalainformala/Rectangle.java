@@ -1,18 +1,18 @@
 package ro.scoalainformala;
 
-import java.awt.*;
+public class Rectangle implements Shape{
 
-public abstract class Rectangle implements Shape {
+    private final double height;
+    private final double width;
 
-    private double heigth;
-    private double width;
+    public Rectangle(double height, double width) {
+        this.height = height;
+        this.width = width;
+    }
 
-    public Rectangle(double heigth, double width){
-        this.heigth = heigth;
-        this.width = width;}
-
-        public double getArea(){
-            return heigth * width;
-        }
+    @Override
+    public double getArea() {
+        return height * width;
+    }
 
 }
